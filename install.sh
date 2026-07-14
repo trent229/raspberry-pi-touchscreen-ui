@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-set -euo pipefail
+# #! means “use the following interpreter.”
+# /usr/bin/env searches the system for the requested program.
+# bash tells it to use the Bash shell.
+set -euo pipefail                                
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 AUTOSTART_DIR="$HOME/.config/autostart"
